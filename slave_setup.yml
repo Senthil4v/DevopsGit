@@ -8,11 +8,6 @@
     loop:
     - yum-utils
     - git
-  - name: Add Docker CE repository
-    get_url:
-     url: https://download.docker.com/linux/centos/docker-ce.repo
-     dest: /etc/yum.repos.d/docker-ce.repo
-     mode: 644
   - name: Install Docker
     yum: 
      name: docker-ce 
