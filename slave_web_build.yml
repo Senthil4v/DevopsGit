@@ -4,4 +4,4 @@
   become_user: root
   tasks:
   - name: "build_docker_image"
-    command: chdir=/devOps/jenkins/workspace/1_ProjCert/ docker build -t websrv .
+    command: chdir=/devops/workspace/Senthil_job_pipeline docker build -t websrv .
